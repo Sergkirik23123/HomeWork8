@@ -16,11 +16,7 @@ public class Main {
 
         employees.forEach(Employee::displayInfo);
 
-        employees.forEach(emp -> {
-            if(emp instanceof Manager){
-                emp.increaseSalary(5000);
-            }
-        });
+        employees.get(2).increaseSalary(5000);
 
         employees.forEach(Employee::displayInfo);
 
